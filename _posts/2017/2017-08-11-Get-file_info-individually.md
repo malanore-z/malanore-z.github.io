@@ -10,28 +10,28 @@ tags: [c/C++]
 ## <font color="blue">Windows平台</font>
 ### 一些介绍关于`_findnext`
 要使用`_findnext`函数， 就必须在代码中包含`io.h`头文件。 在MSDN上这样介绍这个函数
-> Find the next name, if any, that matches the filespec argument in a previous call to >_findfirst, and then alter the fileinfo structure contents accordingly.
->{% highlight cpp %}
->int _findnext(  
->   intptr_t handle,  
->   struct _finddata_t *fileinfo   
->);  
->{% endhighlight %}
->Parameters  	
->`handle`  	
->Search handle returned by a previous call to `_findfirst`.  	
->`fileinfo`  	
->File information buffer.  	  	
+> Find the next name, if any, that matches the filespec argument in a previous call to _findfirst, and then alter the fileinfo structure contents accordingly.
+{% highlight cpp %}
+int _findnext(  
+   intptr_t handle,  
+   struct _finddata_t *fileinfo   
+);  
+{% endhighlight %}
+Parameters  	
+`handle`  	
+Search handle returned by a previous call to `_findfirst`.  	
+`fileinfo`  	
+File information buffer.  	  	
 
 当然， MSDN上也介绍了这个函数的返回值， 有已经存在而且质量明显很好的资源不拿来用不是程序员的行事风格， 因此， 这里继续引用MSDN上的描述
->If successful, returns 0. Otherwise, returns –1 and sets errno to a value indicating the nature of the failure. Possible error codes are shown in the following table.  	
-<font color="purple">EINVAL</font>  	
-Invalid parameter: fileinfo was NULL. Or, the operating system returned an unexpected error.  
-<font color="purple">ENOENT</font>  
-No more matching files could be found.  
-<font color="purple">ENOMEM</font>  
-Not enough memory or the file name's length exceeded MAX_PATH.  
-If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in Parameter Validation.  
+>If successful, returns 0. Otherwise, returns –1 and sets errno to a value indicating the nature >of the failure. Possible error codes are shown in the following table.  	
+><font color="purple">EINVAL</font>  	
+>Invalid parameter: fileinfo was NULL. Or, the operating system returned an unexpected error.  
+><font color="purple">ENOENT</font>  
+>No more matching files could be found.  
+><font color="purple">ENOMEM</font>  
+>Not enough memory or the file name's length exceeded MAX_PATH.  
+>If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as >described in Parameter Validation.  
 
 对于`_findnext`函数， 在使用其之前， 需要先使用 `_findfirst` 函数获取需要查找的文件句柄， 句法为
 {% highlight cpp %}
@@ -43,45 +43,45 @@ long handle = _findfirst(path, &fileInfo);
 {% highlight cpp %}
 struct _finddata_t
 {
-	//File attribute.
+//File attribute.
     unsigned    attrib;
 
-	//Time of file creation (–1L for FAT file systems).
-	//This time is stored in UTC format. To convert to the local time, use localtime_s.
+//Time of file creation (–1L for FAT file systems).
+//This time is stored in UTC format. To convert to the local time, use localtime_s.
     __time32_t  time_create;    // -1 for FAT file systems
 
-	//Time of the last file access (–1L for FAT file systems).
-	//This time is stored in UTC format. To convert to the local time, use localtime_s.
+//Time of the last file access (–1L for FAT file systems).
+//This time is stored in UTC format. To convert to the local time, use localtime_s.
     __time32_t  time_access;    // -1 for FAT file systems
 
-	//Time of the last write to file.
-	//This time is stored in UTC format. To convert to the local time, use localtime_s.
+//Time of the last write to file.
+//This time is stored in UTC format. To convert to the local time, use localtime_s.
     __time32_t  time_write;
 
-	//Length of the file in bytes.
+//Length of the file in bytes.
     _fsize_t    size;
 
-	//Null-terminated name of matched file or directory, without the path.
+//Null-terminated name of matched file or directory, without the path.
     char        name[260];
 };
 {% endhighlight %}
-*当然， 原始的`_finddata_t`结构体定义并不完全如此， 因为涉及到多种变体， `_finddata_t`实际上是一个宏。  
+**当然， 原始的`_finddata_t`结构体定义并不完全如此， 因为涉及到多种变体， `_finddata_t`实际上是一个宏。  
 当然， 毕竟涉及到了文件信息， 还有着一些因为不同文件系统而不同的限制或是特例， 参照  
-[Portal: MSDN detailed documentation](https://msdn.microsoft.com/en-us/library/kda16keh.aspx)。*
+[Portal: MSDN detailed documentation](https://msdn.microsoft.com/en-us/library/kda16keh.aspx)。**  
 `_finddata_t` 结构体成员 `attrib` 存储文件/文件夹的属性， 在 `io.h` 中定义了几个宏作为文件夹属性的值， 仍然引用MSDN上的说明
->You cannot specify target attributes (such as _A_RDONLY) to limit the find operation. These attributes are returned in the attrib field of the _finddata_t structure and can have the following values (defined in IO.h). Users should not rely on these being the only values possible for the attrib field.  
+>You cannot specify target attributes (such as _A_RDONLY) to limit the find operation. These attributes are returned in the attrib field of the _finddata_t structure and can have the following values (defined in IO.h). Users should not rely on these being the only values possible for the attrib field.
 <font color="purple">_A_ARCH</font>  
-Archive. Set whenever the file is changed and cleared by the BACKUP command. Value: 0x20.  
+Archive. Set whenever the file is changed and cleared by the BACKUP command. Value: 0x20.
 <font color="purple">_A_HIDDEN</font>  
-Hidden file. Not generally seen with the DIR command, unless you use the /AH option. Returns information about normal files and files that have this attribute. Value: 0x02.  
+Hidden file. Not generally seen with the DIR command, unless you use the /AH option. Returns information about normal files and files that have this attribute. Value: 0x02.
 <font color="purple">_A_NORMAL</font>  
-Normal. File has no other attributes set and can be read or written to without restriction. Value: 0x00.  
+Normal. File has no other attributes set and can be read or written to without restriction. Value: 0x00.
 <font color="purple">_A_RDONLY</font>  
-Read-only. File cannot be opened for writing and a file that has the same name cannot be created. Value: 0x01.  
+Read-only. File cannot be opened for writing and a file that has the same name cannot be created. Value: 0x01.
 <font color="purple">_A_SUBDIR</font>  
-Subdirectory. Value: 0x10.  
+Subdirectory. Value: 0x10.
 <font color="purple">_A_SYSTEM</font>  
-System file. Not ordinarily seen with the DIR command, unless the /A or /A:S option is used. Value: 0x04.    
+System file. Not ordinarily seen with the DIR command, unless the /A or /A:S option is used. Value: 0x04.
 
 对于查找文件来说， 只有 `attrib` 和 `name` 是有用的， `attrib` 句法如下
 {% highlight cpp %}
