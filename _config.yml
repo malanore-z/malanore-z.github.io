@@ -64,10 +64,6 @@ navs:
     label: Blog
 
   -
-    href: /acm
-    label: ACM
-
-  -
     href: /bookmark
     label: Bookmark
 
