@@ -3,6 +3,7 @@ layout: post
 title: Some info for freshman
 no-post-nav: true
 ---
+*一些你们入学前或许需要关注的信息， 将持续更新， 直至开学后移除*
 
 ## Common URL
 #### [学校官网首页](http://www.ncut.edu.cn/)  
