@@ -1,3 +1,9 @@
+---
+layout: post
+title: Some info for freshman
+no-post-nav: true
+---
+
 ## Common URL
 #### [学校官网首页](http://www.ncut.edu.cn/)  
 以下所有URL都在官网上有链接
