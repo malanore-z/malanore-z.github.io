@@ -37,7 +37,7 @@ void push_up(int idx){
 {% endhighlight %}
 
 ## POJ 3468
-Proble Description : [Portal](http://poj.org/problem?id=3468){:target=_blank}  
+Proble Description : [Portal](http://poj.org/problem?id=3468){:target="_blank"}  
 Code :   
 {% highlight cpp %}
 #include<iostream>
@@ -141,7 +141,7 @@ int main(){
 {% endhighlight %}
 
 ### POJ 2528
-Problem Description : [Portal](http://poj.org/problem?id=2528){:target=_blank}  
+Problem Description : [Portal](http://poj.org/problem?id=2528){:target="_blank"}  
 Code :   
 {% highlight cpp %}
 #include<iostream>
