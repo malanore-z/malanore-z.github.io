@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get file_info individually by C
+title: 线段树区段更新
 category: [线段树]
 tags: [数据结构]
 ---
