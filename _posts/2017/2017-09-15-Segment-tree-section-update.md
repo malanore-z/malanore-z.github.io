@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 线段树区段更新
-category: [线段树]
+category: [数据结构]
 tags: [数据结构]
 ---
 
