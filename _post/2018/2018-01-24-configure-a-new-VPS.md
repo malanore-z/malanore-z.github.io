@@ -1,8 +1,8 @@
 ---
-layout:post    
-title:Configure A New VPS    
-category:Linux   
-tags:Ubuntu, install    
+layout: post    
+title: Configure A New VPS    
+category: Linux   
+tags: [Ubuntu]
 ---
 
 *每次购买新的VPS之后都要安装诸多工具， 因此将其记录下来， 方便忘记指令的时候查阅。*
