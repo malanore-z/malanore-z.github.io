@@ -21,7 +21,7 @@ apt-get install build-essential
 ## JAVA
 ### Download
 JavaSE [Download Portal](http://www.oracle.com/technetwork/java/javase/downloads/index.html)   
-&nbsp;&nbsp;First of all, download a jdk is necessary. The portal above is the link to the download page. Get the download link from the browser download list, then download jdk to VPS by using `wget` command. The following is an example, but it may not be available.   
+&nbsp;&nbsp;First of all, It is necessary to download a jdk. The portal above is the link to the download page. Get the download link from the browser download list, then download jdk to VPS by using `wget` command. The following is an example, but it may not be available.   
 ```
 wget http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.tar.gz?AuthParam=1516767328_ac989785c54226e7868cf9072b46fd7c
 ```
