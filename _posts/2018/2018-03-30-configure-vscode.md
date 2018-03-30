@@ -29,7 +29,7 @@ Vim: 这个不多做介绍， 会使用Vim插件的也不会看这种教程…�
 
 ### Debug for C++
 新建一个cpp文件， 写一段简短的C++程序， 选择debug， 会提示选择一个debug configuration， 选择C++(GDB/LLDB), 然后vscode自动打开一个launch.json文件
-```json
+```
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -68,7 +68,7 @@ Vim: 这个不多做介绍， 会使用Vim插件的也不会看这种教程…�
 ```
 将以上代码复制粘贴进launch.json文件， 然后继续完成compile task。
 Ctrl+Shift+p -> Tasks: Configure Task -> Create tasks.json file from template -> Others, vscode会自动打开一个tasks.json文件。
-```json
+```
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
@@ -118,7 +118,7 @@ Ctrl+Shift+p -> Tasks: Configure Task -> Create tasks.json file from template ->
 单机界面左下角的齿轮标志， 选择settings， 打开User Settings， 在打开的json文件中修改vscode设置。
 ![image](../../../assets/images/settings.png)
 上图是我的一些设置， 左侧为默认设置， 右侧为个人设置， 个人设置会覆盖默认设置中的相应项。   
-```json
+```
 {
     "workbench.colorTheme": "Visual Studio Light",
     "editor.wordWrap": "on",
@@ -140,7 +140,7 @@ Ctrl+Shift+p -> Tasks: Configure Task -> Create tasks.json file from template ->
 }
 ```
 json文件中不能有注释， 所以将一些说明写在下面。(上面的lunch.json和tasks.json能有注释是因为vscode允许……)   
-```json
+```
 {
     // 主题
     "workbench.colorTheme": "Visual Studio Light",
@@ -198,7 +198,7 @@ Peek Definition | Alt+F12(Ubuntu下默认Ctrl+Alt+F12， 和系统快捷键冲�
 
 ### Snippets
 vscode提供了配置用户代码段的功能， 入口在Ctrl+Shift+p列出所有命令中搜索snippets， 选择Configure User Snippets， 选择C++， 将以下代码复制入其中。
-```json
+```
 {
 	"main": {
 		"prefix": "main",
@@ -221,7 +221,7 @@ vscode提供了配置用户代码段的功能， 入口在Ctrl+Shift+p列出所�
 }
 ```
 然后选择java， 将以下代码复制入其中。
-```json
+```
 "main": {
 		"prefix": "main",
 		"body": [
