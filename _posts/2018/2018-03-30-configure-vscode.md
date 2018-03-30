@@ -1,25 +1,24 @@
 ---
 layout: post    
-title: Configure VScode(Mainly for C++)
-category: disorder   
+title: Configure VScode(Mainly for C++)   
 tags: [configure]
 ---
 
-## VSCode 安装配置教程(Mainly for .cpp and .java)
+*VSCode 安装配置基础教程(Mainly for .cpp and .java)*
 
 ### Download & Install
 [Download Link](https://code.visualstudio.com/)   
 
 安装结束之后打开vscode.
-![image](../images/welcome.png)    
+![image](../../../assets/images/welcome.png)    
 vscode界面最上方是菜单项， 最左侧是导航栏， 从上至下依次为Explorer， Search, Source Control, Debug, Extensions。   
 选择 Open Folder， 打开一个文件夹作为工作根目录。 vscode添加新目录比较麻烦， 因而建议建立一个工作区， 在工作区下添加自己需要用到的文件夹。    
 在初始界面不要选择 Open Folder， 如果已经打开了一个目录， File->Close Folder关闭当前文件夹， 然后选择File->Add Folder to WorkSpace, vscode会自动建立一个未命名工作区， 然后便可以向工作区中添加文件夹了。工作区的配置需要保存， 否则关闭之后就需要重建， 选择File->Save WorkSpace As, 建议保存在主要工作目录中， 之后就可以通过File->Open WorkSpace快速打开工作区。    
-![image](../images/init.png)     
+![image](../../../assets/images/init.png)     
 
 ### Extensions   
 vscode本身只是一个比较好用的编辑器， 如果想配置成一个顺手的IDE， 需要通过添加各种各样的插件来完成这项工作。
-![image](../images/extensions.png)  
+![image](../../../assets/images/extensions.png)  
 这是几个提供了基础功能的插件。  
 C/C++: 提供了一个C/C++语言IDE的基本功能， 包括自动补全， 代码格式化， 类/函数导航， 声明/定义跳转还有最重要的debug。   
 java: 几个java相关的插件是一系列的插件， 安装Java Extension Pack会一并安装， 提供了Java语言IDE的基本功能， 包括同C/C++相同的功能， 以及对Maven， Gradle， 和JUnit Test的支持。   
@@ -117,7 +116,7 @@ Ctrl+Shift+p -> Tasks: Configure Task -> Create tasks.json file from template ->
 
 ### Settings
 单机界面左下角的齿轮标志， 选择settings， 打开User Settings， 在打开的json文件中修改vscode设置。
-![image](../images/settings.png)
+![image](../../../assets/images/settings.png)
 上图是我的一些设置， 左侧为默认设置， 右侧为个人设置， 个人设置会覆盖默认设置中的相应项。   
 ```json
 {
