@@ -82,7 +82,8 @@ analytics :
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, C, C++, MySQL]
-# skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery]
+skill_software_keywords: [Java, C, C++]
+skill_j2ee_keywords: [Spring, Hibernet, MyBatis, JSP]
+skill_web_keywords: [JQuery, Vue]
 skill_mobile_app_keywords: [Android]
+skill_java_web_tools: [git, maven, gradle, shell script]
