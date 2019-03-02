@@ -7,16 +7,16 @@
 
 # Site settings
 title: Fragmentation of Time
-name: snowwhisper
-email: snowwhisper.zyh@gmail.com
+name: Malanore·Z
+email: malanore.z@gmail.com
 location: BeiJing, China
 company: NCUT
 company_url: http://www.ncut.edu.cn
-github_url: https://github.com/snowwhisper
-description: This is personnel website of snowwhisper
+github_url: https://github.com/malanore-z
+description: This is personnel website of malanore.z
 favicon: favicon.png # Image must be in assets/images
 
-url: http://snowwhisper.github.io # the base hostname & protocol for your site
+url: http://malanore-z.github.io # the base hostname & protocol for your site
 
 ## Gem
 gems:
