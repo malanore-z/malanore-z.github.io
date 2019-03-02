@@ -7,13 +7,13 @@
 
 # Site settings
 title: Fragmentation of Time
-name: Malanore·Z
+name: Malanore
 email: malanore.z@gmail.com
 location: BeiJing, China
 company: NCUT
 company_url: http://www.ncut.edu.cn
 github_url: https://github.com/malanore-z
-description: This is personnel website of malanore.z
+description: This is personnel website of malanore
 favicon: favicon.png # Image must be in assets/images
 
 url: http://malanore-z.github.io # the base hostname & protocol for your site
