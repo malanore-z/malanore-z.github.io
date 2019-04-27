@@ -1,3 +1,4 @@
+---
 layout: post    
 title: 算法竞赛杂项知识    
 category: contest   
