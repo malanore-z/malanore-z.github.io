@@ -4,7 +4,7 @@
 
         <h2>About ME</h2>
 
-        <p>I like the code, but also like literature, only willing to use my fingertips to tap, record fragmentation lost behind the time</p>
+        <p>There should be content here, but bloger was too lazy, so it was gone.</p>
 
         <h2>Contact</h2>
 
@@ -14,54 +14,35 @@
         </ul>
 
         <h2>Skill Keywords</h2>
-
-        {% if site.skill_software_keywords %}
+        {% if site.skill_strange_keywords %}
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Software Engineer Keywords</h3>
+                <h3 class="panel-title">Strange Skills</h3>
             </div>
             <div class="panel-body">
-                {% for keyword in site.skill_software_keywords %}
+                {% for keyword in site.skill_strange_keywords %}
                 <button class="btn btn-default" type="button">{{ keyword }}</button> {% endfor %}
             </div>
         </div>
-        {% endif %} {% if site.skill_j2ee_keywords %}
+        {% endif %}
+        {% if site.skill_tools_keywords %}
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">J2EE Developer Keywords</h3>
+                <h3 class="panel-title">Tools Skills</h3>
             </div>
             <div class="panel-body">
-                {% for keyword in site.skill_j2ee_keywords %}
+                {% for keyword in site.skill_tools_keywords %}
                 <button class="btn btn-default" type="button">{{ keyword }}</button> {% endfor %}
             </div>
         </div>
-        {% endif %} {% if site.skill_mobile_app_keywords %}
+        {% endif %}
+        {% if site.skil_program_keywords %}
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Mobile Developer Keywords</h3>
+                <h3 class="panel-title">Program Skills</h3>
             </div>
             <div class="panel-body">
-                {% for keyword in site.skill_mobile_app_keywords %}
-                <button class="btn btn-default" type="button">{{ keyword }}</button> {% endfor %}
-            </div>
-        </div>
-        {% endif %} {% if site.skill_web_keywords %}
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Web Developer Keywords</h3>
-            </div>
-            <div class="panel-body">
-                {% for keyword in site.skill_web_keywords %}
-                <button class="btn btn-default" type="button">{{ keyword }}</button> {% endfor %}
-            </div>
-        </div>
-        {% endif %} {% if site.skill_java_web_tools %}
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Java Web Keywords</h3>
-            </div>
-            <div class="panel-body">
-                {% for keyword in site.skill_java_web_tools %}
+                {% for keyword in site.skil_program_keywords %}
                 <button class="btn btn-default" type="button">{{ keyword }}</button> {% endfor %}
             </div>
         </div>
