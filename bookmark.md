@@ -11,8 +11,8 @@ menu: Bookmark
     
 
 ## Machine Learning
-- [linear algebra](https://www.coursera.org/learn/linear-algebra-machine-learning) -
-- [machine learning](https://www.coursera.org/learn/machine-learning) -
+- [linear algebra](https://www.coursera.org/learn/linear-algebra-machine-learning) -Online course
+- [machine learning](https://www.coursera.org/learn/machine-learning) -Online course
 
 ## Others
 - [ace](https://ace.c9.io/) -The High Performance Code Editor for the Web.  
