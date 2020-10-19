@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Fragmentation of Time
+title: IT Five
 name: Malanore
 email: malanore.z@gmail.com
 location: BeiJing, China
-company: NCUT
-company_url: http://www.ncut.edu.cn
+company: ZJU
+company_url: http://www.cst.zju.edu.cn/
 github_url: https://github.com/malanore-z
 description: This is personnel website of malanore
 favicon: favicon.png # Image must be in assets/images
@@ -43,7 +43,7 @@ kramdown:
   enable_coderay: true
 
 # Disque
-disque: snowwhisper.disqus.com
+disque: malanore.disqus.com
 
 # Pagination
 paginate: 10
@@ -72,7 +72,7 @@ navs:
     label: About
 
 # Sidebar to show popular repo
-side_bar_repo_limit: 5 # Number of repos to show
+side_bar_repo_limit: 3 # Number of repos to show
 
 # Google Analytics
 analytics :
@@ -82,6 +82,6 @@ analytics :
 
 
 # For about.html. Fell free to create your own!
-skill_strange_keywords: [f(x)=wx+b, RE & TLE]
-skill_tools_keywords: [push -f, rm -rf, update where 1=1, flushdb]
-skil_program_keywords: [C, C++, Java, Python]
+skill_strange_keywords: [ML, vue]
+skill_tools_keywords: [git, sh, docker]
+skil_program_keywords: [C/C++, Java, Python]
