@@ -8,6 +8,7 @@ tags: [ML]
 *some resources for machine learning.*
 
 ## 数学  
+
 + 线性代数  
     + https://www.coursera.org/learn/linear-algebra-machine-learning  
     + https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/  
@@ -21,7 +22,9 @@ tags: [ML]
     + http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780199591756.001.0001/acprof-9780199591756  
     + http://home.ku.edu.tr/~lkockesen/teaching/econ333/lectnotes/uggame.pdf  
     + https://serc.carleton.edu/NAGTWorkshops/complexsystems/introduction.html  
+
 ## 计算机基础  
+
 + Python  
     + https://www.codecademy.com/learn/learn-python  
     + https://www.programiz.com/python-programming/tutorial  
