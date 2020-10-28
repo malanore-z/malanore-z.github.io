@@ -30,6 +30,10 @@
     </div>
 </div>
 {% endfor %}
+<h3 class="sidebar-title">Exchange Links</h3>
+{% for link in site.exchange_links %}
+<a href="{{ link.url }}">{{ link.name }}</a>
+{% endfor %}
 <script>
     $(document).ready(function(){
 

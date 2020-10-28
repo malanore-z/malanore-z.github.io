@@ -85,3 +85,15 @@ analytics :
 skill_strange_keywords: [ML, vue]
 skill_tools_keywords: [git, sh, docker]
 skil_program_keywords: [C/C++, Java, Python]
+
+# Exchange links
+exchange_links:
+  -
+    name: 风车小站
+    url: http://124.70.53.97/
+  -
+    name: charstal
+    url: https://www.charstal.com/
+  -
+    name: Eree's Blog
+    url: https://ereebay.me/
