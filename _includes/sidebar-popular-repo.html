@@ -30,9 +30,20 @@
     </div>
 </div>
 {% endfor %}
-<h3 class="sidebar-title">Exchange Links</h3>
+<div style="margin-top: 50px;"></div>
+<h3 class="sidebar-title"><span class="glyphicon glyphicon-link"></span>Exchange Links</h3>
 {% for link in site.exchange_links %}
-<a href="{{ link.url }}">{{ link.name }}</a>
+<div class="card text-center">
+    <div class="thumbnail">
+        <div class="card-image geopattern" data-pattern-id="{{ link.name }}">
+            <div class="card-image-cell">
+                <h3 class="card-title">
+                    <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
 {% endfor %}
 <script>
     $(document).ready(function(){

@@ -91,9 +91,12 @@ exchange_links:
   -
     name: 风车小站
     url: http://124.70.53.97/
+    description: 风车小站
   -
     name: charstal
     url: https://www.charstal.com/
+    description: 爱音乐，爱游戏，爱折腾
   -
-    name: Eree's Blog
+    name: Eree
     url: https://ereebay.me/
+    description: This is Eree's blog
