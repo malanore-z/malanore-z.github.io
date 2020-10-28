@@ -17,6 +17,7 @@ menu: Bookmark
 ## Exchange Link  
 - [风车小站](http://124.70.53.97/) -Zhenyuan Zhang  
 - [charstal](https://www.charstal.com/) -Yu Hu  
+- [Eree's Blog](https://ereebay.me/) - Xinkang Jia
 
 ## Others
 - [ace](https://ace.c9.io/) -The High Performance Code Editor for the Web.  
