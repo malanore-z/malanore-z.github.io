@@ -14,11 +14,6 @@ menu: Bookmark
 - [linear algebra](https://www.coursera.org/learn/linear-algebra-machine-learning) -Online course  
 - [machine learning](https://www.coursera.org/learn/machine-learning) -Online course  
 
-## Exchange Link  
-- [风车小站](http://124.70.53.97/) -Zhenyuan Zhang  
-- [charstal](https://www.charstal.com/) -Yu Hu  
-- [Eree's Blog](https://ereebay.me/) - Xinkang Jia
-
 ## Others
 - [ace](https://ace.c9.io/) -The High Performance Code Editor for the Web.  
 - [Dillinger](https://dillinger.io/) -Online Markdown Editor.  
